@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Information - Expert System Tool</title>
+        <title>Information - Expert System</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="..">Expert System Tool</a>
+                <a class="navbar-brand" href="..">Expert System</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -34,7 +34,7 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem">
-                                <a href=".." class="nav-link">Home</a>
+                                <a href=".." class="nav-link">Homepage</a>
                             </li>
                             <li class="navitem active">
                                 <a href="./" class="nav-link">Information</a>
@@ -90,9 +90,13 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#information-hub" class="nav-link">Information Hub:</a>
+            <li class="nav-item" data-level="1"><a href="#information-hub" class="nav-link">Information Hub</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#guidance" class="nav-link">Guidance</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#risk-ranking-information" class="nav-link">Risk Ranking information</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -107,37 +111,85 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="information-hub">Information Hub:</h1>
+<h1 id="information-hub"><strong>Information Hub</strong></h1>
+<hr />
 <p>Write any information here.</p>
+<p>*Guidance for using the webpage.</p>
+<p>*Explain how the suggested safeguards and design rules affect the risk ranking (IPLs, how to implement them into the Excel).</p>
+<p>*Define key terminology nomenclature.</p>
+<p>*Process safety terms.</p>
+<p>*RR matrix.</p>
+<p>*ALARP Triangle.</p>
+<p>*Spider diagram for using the tool?</p>
 <h2 id="guidance">Guidance</h2>
-<p>This could include the steps to use the tool - in a spider diagram format?
-Recommendations for the user when using this tool: based on their specific
-requirements, e.g., if A do X, if B, do Y.</p>
-<p>Onece you define the likelihood of an unmitigated event occurring (i.e., between 0 and 5), this value applies to all the areas of people, assets, environment and reputation. The mitigated event (i.e., with safeguards) lowers the likelihood of the cause but does not lower the severity.</p>
+<p>Steps to use the tool (spider diagram)
+Recommendations for the user when using this tool: based on their specific requirements, e.g., if A do X, if B, do Y.</p>
+<p>Once you define the likelihood of an unmitigated event occurring (i.e., between 0 and 5), this value applies to all the areas of people, assets, environment and reputation. The mitigated event (i.e., with safeguards) lowers the likelihood of the cause but does not lower the severity.</p>
 <p>You can only have a 'zero' value on Severity. You <strong>cannot</strong> have a cause with a Likelihood of zero.</p>
-<p>The scope of this tool: I.e., it consider equipment and chemicals (toxicity, liquid flammability).
-It does not consider solids flammability. It is worth noting, for the information of the user, that solids do not usually ignite, unless they are in the form of a dust. </p>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
+<hr />
+<h2 id="risk-ranking-information">Risk Ranking information</h2>
+<hr />
 <h2 id="terminology">Terminology</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+<ul>
+<li>Legend sheet (Sodium Carbonate SDS) (https://www.fishersci.co.uk/chemicalProductData_uk/wercs?itemCode=10577182&amp;lang=EN)</li>
+<li>Glossary_ccps</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Terminology</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Design intent</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Node</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>Guidewords</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Deviation</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>Hazard</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Causes</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>Scenario</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Safeguard</td>
+<td>Text</td>
+</tr>
+<tr>
+<td>Recommendation</td>
+<td>Text</td>
+</tr>
+</tbody>
+</table>
+<hr />
 <h3 id="process-safety">Process Safety</h3>
-<p>Key process safety terminology - in a tabular form. Taken from BSI standard.
-Also from HSE and IChemE.
-Include a hyperlink reference to the standard.
-For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
+<p>Key process safety terminology - in a tabular form (BSI, HSE, IChemE).
+BSI Link</p>
+<hr />
 <h3 id="risk-ranking">Risk Ranking</h3>
 <h3 id="alarp-triangle">ALARP Triangle</h3>
+<hr />
 <h3 id="hazop">HAZOP</h3>
-<p>Key HAZOP terminology - in a tabular form. E.g., weather</p></div>
+<p>Key HAZOP terminology table. E.g., weather</p></div>
             </div>
         </div>
 
