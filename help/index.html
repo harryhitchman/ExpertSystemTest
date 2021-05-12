@@ -96,11 +96,11 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#part-1-tool-related-questions" class="nav-link">Part 1: Tool-related questions:</a>
+            <li class="nav-item" data-level="2"><a href="#part-1-process-design" class="nav-link">Part 1: Process Design</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#part-2-design-related-questions" class="nav-link">Part 2: Design-related questions:</a>
+            <li class="nav-item" data-level="2"><a href="#part-2-webpage" class="nav-link">Part 2: Webpage</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -113,82 +113,82 @@
 
 <h1 id="help-hub"><strong>Help Hub</strong></h1>
 <hr />
-<p>Put some high-level information about the Help Hub here.</p>
-<p>FAQs: regarding the tool use.
-FAQs: regarding design queries.</p>
+<p>The Help Hub provides answers to common queries related to both process design and the Expert System webpage. </p>
 <hr />
 <h2 id="frequently-asked-questions-faqs"><strong>Frequently Asked Questions (FAQs)</strong></h2>
 <hr />
-<h2 id="part-1-tool-related-questions"><strong>Part 1: Tool-related questions:</strong></h2>
+<h2 id="part-1-process-design"><strong>Part 1: Process Design</strong></h2>
 <h3 id="question-11"><em>Question 1.1</em></h3>
-<pre><code>Q: Enter question here.
-A: Type answer here.
+<pre><code>Q: Why is no corrosion allowance specified for stainless steel (SS)?
+A: Typically, it is assumed that SS does not corrode; hence, no corrosion allowance is specified.
 </code></pre>
-<hr />
-<h2 id="part-2-design-related-questions"><strong>Part 2: Design-related questions:</strong></h2>
-<h3 id="question-21"><em>Question 2.1</em></h3>
-<pre><code>Q: Why has no corrosion allowance been specified for stainless steel?
-A: Typically, we assume that SS does not corrode; hence, we do not specify a corrosion allowance for it.
-</code></pre>
-<h3 id="question-22"><em>Question 2.2</em></h3>
-<pre><code>Q: What value do I take as my design temperature?
+<h3 id="question-12"><em>Question 1.2</em></h3>
+<pre><code>Q: What value should be taken as the design temperature?
 A: The maximum operating temperature (MOT) + 10%, or add 10°C. Whichever value is greater.
 </code></pre>
-<h3 id="question-23"><em>Question 2.3</em></h3>
-<pre><code>    Q: What is the guidance on temperature instrument location around PSVs?
-    A: PSVs are protective against overpressure, but not temperature. Therefore, it is important that
-    any temperature instrument is located upstream of the PSV inlet line to ensure it is utilised effectively.
-</code></pre>
-<h3 id="question-24"><em>Question 2.4</em></h3>
-<pre><code>    Q: Can I take credit for an alarm and trip in the same direction on the same instrument as two separate safeguards?
-    A: No. However, if they are in different directions (e.g., high and low) it is acceptable to claim this as
+<h3 id="question-13"><em>Question 1.3</em></h3>
+<pre><code> Q: Can an alarm and trip in the same direction, on the same instrument item, be credited as two separate safeguards?
+ A: No. However, if they are in different directions (e.g. high and low) it is acceptable to claim this as
     two separate safeguards.
 </code></pre>
-<h3 id="question-25"><em>Question 2.5</em></h3>
-<pre><code>    Q: Can I count operator training and start-up procedure as a safeguard?
-    A: Yes. However, this does not qualify for reducing the likelihood (with respect to risk ranking).
-</code></pre>
-<h3 id="question-26"><em>Question 2.6</em></h3>
-<pre><code>    Q: What is the standard guidance for using alarms as safeguards?
-    A: If two alarms are greater than 20 minutes apart, they can count as two separate IPLs. This comes from the generic
-    '15 minute' timeframe assigned for an operator to complete the action from the first alarm, and an additional
+<h3 id="question-14"><em>Question 1.4</em></h3>
+<pre><code> Q: What is the standard guidance for using alarms as safeguards?
+ A: If two alarms are greater than 20 minutes apart, they can count as two separate IPLs. This comes from the generic
+    15 minute timeframe assigned for an operator to complete the action from the first alarm, and an additional
     5 minutes is added on top, to give a minimum of 20 minutes required between alarms.
 </code></pre>
-<h3 id="question-27"><em>Question 2.7</em></h3>
-<pre><code>    Q: Is there any guidance to be aware of regarding analysers?
-    A: (1) Provide a minimum margin of 2% between the alarm and the unsafe condition (e.g., flammable atmosphere) on an
-    oxygen analyser. This is in line with industry wide practice.
+<h3 id="question-15"><em>Question 1.5</em></h3>
+<pre><code> Q: How can alarms be set if there are multiple design cases with large differences in the operating conditions?
+ A: Consider a setpoint deviation alarm (rather than a fixed setpoint) which the operator can select depending on the
+    operating mode.
+</code></pre>
+<h3 id="question-16"><em>Question 1.6</em></h3>
+<pre><code> Q: Can operator training and start-up procedures count as a safeguard?
+ A: Yes. However, this does not qualify for reducing the likelihood with respect to risk ranking.
+</code></pre>
+<h3 id="question-17"><em>Question 1.7</em></h3>
+<pre><code> Q: What is the guidance on temperature instrument location around PSVs?
+ A: PSVs are protective against overpressure, but not temperature. Therefore, it is important that
+    any temperature instrument is located upstream of the PSV inlet line to ensure it is utilised effectively.
+</code></pre>
+<h3 id="question-18"><em>Question 1.8</em></h3>
+<pre><code> Q: Is there any guidance to be aware of regarding PSVs?
+ A: Yes. Although PSVs are not currently included within this Expert System Tool, the following high-level guidance is included:
+    (1) PSV inlet lines should be minimum length and sloped (ideally, vertically) to minimise the risk of deposition. If there is evidence of hydrocarbon deposits, there may be a requirement to heat trace the line.
+    (2) The PSV inlet line size should not exceed the vapour line size that the PSV inlet line is connected to. For example, if the PSV inlet line size is 2", the vapour process line size must be, at a minimum, 2" also.
+    (3) The design temperature of both the upstream and downstream lines of the PSV should be the same.
+    (4) If a PSV is not added to an inspection programme, it cannot be used as a barrier, as it has not been inspected frequently enough to guarantee that it works. It is debated between organisations whether a PSV constitutes as one or two barriers. However, a single PSV in dirty service is not considered as a barrier, and additional factors must be added to claim it as a barrier (e.g. constant nitrogen or steam purge, or have two PSV's).
+    (5) A thermal relief valve should be installed whenever a hot hydrocarbon line is re-inventorised with cold hydrocarbon.
+    (6) A relief valve safegaurd is the 'written scheme of examination'. This involves a PSSR employee arriving on site, who periodically inspects the relief valve to ensure that it is working correctly.
+    (7) If the PSV has a sustained intermittent flow, it can cause a 'hammer' effect whereby the valve lifts, vents and re-seats. This will damage the valve over time.
+    * Note, for more information, refer to API 521 (pressure-relieving and depressurising systems).
+</code></pre>
+<h3 id="question-19"><em>Question 1.9</em></h3>
+<pre><code> Q: Is there any guidance to be aware of regarding analysers?
+ A: (1) Provide a minimum margin of 2% between the alarm and the unsafe condition (e.g. flammable atmosphere) on an
+    oxygen analyser. This is in line with industry-wide practice.
     (2) Include a sample point on the analyser to compare the sample reading with the instantaneous reading the instrument
     is giving. This acts as a calibration method.
 </code></pre>
-<h3 id="question-28"><em>Question 2.8</em></h3>
-<pre><code>    Q: How can I set my alarms if there are multiple design cases with large differences in the operating conditions?
-    A: Consider a setpoint deviation alarm (rather than a fixed setpoint) which the operator can select depending on the
-    operating mode.
-</code></pre>
-<h3 id="question-28_1"><em>Question 2.8</em></h3>
-<pre><code>    Q: Is there any high-level guidance regarding PSVs?
-    A: Yes. Although PSVs are not currently included within this Expert System Tool, the following high-level guidance is included:
-    1. PSV inlet lines should be minimum length and sloped (ideally, vertically) to minimise the risk of deposits. If there is evidence of hydrocarbon deposits, there may be a requirement to heat trace that line.
-    2. PSV inlet line size should not exceed the vapour line size that the PSV inlet line is connected to. For example, if the PSV inlet line size is 2", the vapour process line size must be, at a minimum, 2" also.
-    3. In theory, the design temperature of both the upstream and downstream lines of the PSV should be the same.
-    4. If a PSV is not added to an inspection programme, it cannot be used as a barrier (as it has not been inspected frequently enough to guarentee that it works). It is debated between organisations whether a PSV constitutes as 1 or 2 barriers. However, a single PSV in dirty service is not considered as a barrier - additional factors must be added in order to claim it as a barrier (e.g., constant nitrogen or steam purge, or have 2 PSV's).
-    5. A thermal relief valve should be installed whenever a hot hydrocarbon line is re-inventorised with cold hydrocarbon.
-    6. A relief valve safegaurd is the 'written scheme of examination'. This is where a PSSR employee arrives and periodically inspects the relief valve to ensure that it's working correctly.
-    7. If the PSV has a sustained intermittent flow, it can cause a 'hammer' effect whereby the valve lifts, vents and re-seats. This will damage the valve over time.
-</code></pre>
-<ul>
-<li>For more information, refer to API 521 (Pressure-relieving and depressurising systems).</li>
-</ul>
 <hr />
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<p>Use this website for RAST software (CCPS) FAQ's: https://www.aiche.org/ccps/resources/tools/risk-analysis-screening-tool-rast-and-chemical-hazard-engineering-fundamentals-chef/faqs</p>
-<p>Also, use information from RT HAZOP notes I have made</p></div>
+<h2 id="part-2-webpage"><strong>Part 2: Webpage</strong></h2>
+<h3 id="question-21"><em>Question 2.1</em></h3>
+<pre><code>Q: What hazards does the Expert System focus on?.
+A: The system is focused on equipment and chemical hazards (e.g. autoignition temperature).
+   However, some chemical hazards, including solids flammability and chemical reactions are not included. These hazards are beyond the scope of the current version of the tool, but are sought to be included within its future design.
+</code></pre>
+<h3 id="question-22"><em>Question 2.2</em></h3>
+<pre><code>Q: Why can I not find my specific chemical within the Chemicals Hub section of the webpage?
+A: At the present moment, the webpage is in the design stage, providing a minimum viable product (MVP) to validate the concept.
+   It contains 23 chemicals; however, this number will be increased during subsequent iterations of its design to encompass a greater number of chemical compounds.
+</code></pre>
+<h3 id="question-23"><em>Question 2.3</em></h3>
+<pre><code>Q: Why can I not find my specific equipment item within the Equipment Hub section of the webpage?
+A: Similarly to Question 1.2 above, the Equipment Hub is still within the design stage; thus, may not encompass the full range of
+   equipment items used within the chemical and process industries. However, as stated above, the database will be expanded to include
+   a greater number of equipment items in future iterations of the webpage design.
+</code></pre>
+<hr /></div>
             </div>
         </div>
 

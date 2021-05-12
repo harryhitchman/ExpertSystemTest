@@ -114,19 +114,7 @@
             
             <li class="nav-item" data-level="1"><a href="#components" class="nav-link">Components:</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#valves" class="nav-link">Valves</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#pumps" class="nav-link">Pumps</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#hose-and-couplings" class="nav-link">Hose and Couplings</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#hard-arms" class="nav-link">Hard Arms</a>
+            <li class="nav-item" data-level="2"><a href="#compressors" class="nav-link">Compressors</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -134,11 +122,15 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#hose-and-couplings" class="nav-link">Hose and Couplings</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#pipework" class="nav-link">Pipework</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#compressors" class="nav-link">Compressors</a>
+            <li class="nav-item" data-level="2"><a href="#pumps" class="nav-link">Pumps</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -146,7 +138,7 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#project-layout" class="nav-link">Project layout</a>
+            <li class="nav-item" data-level="2"><a href="#valves" class="nav-link">Valves</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -159,10 +151,7 @@
 
 <h1 id="equipment-hub"><strong>Equipment Hub</strong></h1>
 <hr />
-<p>Put some high-level information about the Equipment Hub here.</p>
-<ol>
-<li>ROSO and ASO valves need to have a description</li>
-</ol>
+<p>The Equipment Hub provides recommended safeguards and design rules for the equipment items within the Expert System workbook. The risk-reduction measures can be implemented into the design to improve the tolerability of the identified hazardous scenario. Moreover, additional resources (e.g. codes and standard) are also provided to the user for further reading.</p>
 <hr />
 <h1 id="vessels"><strong>Vessels:</strong></h1>
 <hr />
@@ -170,32 +159,61 @@
 <hr />
 <h4 id="ambient-temperature-and-pressure-vessel">Ambient Temperature and Pressure Vessel</h4>
 <p><strong>Description:</strong>
-Describe what the item is.</p>
+Small and Medium Atmospheric Tanks (SMATs) have a capacity of less than 450 m³, can be of either plastic or steel, and operate at ambient temperature and pressure conditions.</p>
 <table>
 <thead>
 <tr>
 <th>Recommendations</th>
+<th>Safeguarding</th>
 <th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Header</td>
-<td>Title</td>
+<td>Flame Arrestor Vent</td>
+<td>Overpressure</td>
+<td>Simple design similar to a free vent to atmosphere. Prevents external ignition sources from igniting flammable vapours in the tank.</td>
 </tr>
 <tr>
-<td>Paragraph</td>
-<td>Text</td>
+<td>Continuous Venting via Control Valve</td>
+<td>Overpressure</td>
+<td>Can be routed to a closed system. Valve function can be observed remotely via human-machine interface (HMI).</td>
+</tr>
+<tr>
+<td>Reclosing Pressure Vent</td>
+<td>Overpressure</td>
+<td>Independent safeguard designed solely for pressure relief. Keeps tank isolated from atmosphere when not venting pressure.</td>
+</tr>
+<tr>
+<td>Continuous Inert Blanketing via Control Valve</td>
+<td>Vacuum</td>
+<td>Prevents air ingress from creating a flammable mixture in the tank vapour space.</td>
+</tr>
+<tr>
+<td>Reclosing Vacuum Breaker</td>
+<td>Vacuum</td>
+<td>Independent safeguard designed solely for vacuum relief. Keeps tank isolated from atmosphere when not breaking vacuum.</td>
+</tr>
+<tr>
+<td>High Level Alarms and Flow Shut-Off</td>
+<td>Overfilling</td>
+<td>Instrumentation for tank high level and flow alarms should be completely separate from the normal level and flow measurement with separate sensors and control units.</td>
 </tr>
 </tbody>
 </table>
 <p><code>Design Rules:</code></p>
 <ul>
-<li>Design Rule 1</li>
-<li>Design Rule 2</li>
-<li>Design Rule 3</li>
+<li>Most atmospheric storage tanks are specifically designed so that the roof wall seam will fail preferentially to any other joint, and the excess pressure safely relieved, hopefully mitigating the effects of an accident.</li>
+<li>Pressure relief devices, directing the hazardous materials to a safe area, to protect the tank from overpressure.</li>
+<li>A vacuum relief device located at, or near, the highest point in the tank.</li>
+<li>Adequate venting capacity should provided for excess vapour generation. Overflow lines routed to a safe location and secondary containment.</li>
 </ul>
-<p><strong>Further reading:</strong></p>
+<p><strong>Further resources:</strong></p>
+<ul>
+<li><a href="https://law.resource.org/pub/us/cfr/ibr/002/api.620.2002.pdf">API 620: Design and Construction of Large Welded, Low-Pressure Storage Tanks</a></li>
+<li><a href="https://law.resource.org/pub/us/cfr/ibr/002/api.2000.1998.pdf">API 2000: Venting Atmospheric and Low-Pressure Storage Tanks</a></li>
+<li><a href="https://www.aiche.org/resources/publications/cep/2019/december/protect-tanks-overpressure-and-vacuum">Protect Tanks from Overpressure and Vacuum</a></li>
+</ul>
 <hr />
 <h2 id="pressurised">Pressurised</h2>
 <hr />
@@ -297,7 +315,7 @@ Describe what the item is.</p>
 </thead>
 <tbody>
 <tr>
-<td>Header</td>
+<td>To reduce the probability of a BLEVE the LPG tank can be mounded or buried to give protection from fire engulfment and this will significantly reduce the probability of BLEVE.</td>
 <td>Title</td>
 </tr>
 <tr>
@@ -435,6 +453,286 @@ Describe what the item is.</p>
 <p><strong>Further reading:</strong></p>
 <hr />
 <h1 id="components"><strong>Components:</strong></h1>
+<hr />
+<h2 id="compressors">Compressors</h2>
+<hr />
+<h4 id="centrifugal"><strong>Centrifugal</strong></h4>
+<p><strong>Description:</strong>
+Describe what the item is.</p>
+<table>
+<thead>
+<tr>
+<th>Recommendations</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Header</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Paragraph</td>
+<td>Text</td>
+</tr>
+</tbody>
+</table>
+<p><code>Design Rules:</code></p>
+<ul>
+<li>It is common practice to install a knock-out vessel with level detection in the suction of any compressor for which there is a risk of liquid accumulation in the suction line. The requirement depends upon the probability of liquid accumulation and the tolerance of the compressor to liquid.</li>
+<li>Design Rule 2</li>
+<li>Design Rule 3</li>
+</ul>
+<p><strong>Further reading:</strong></p>
+<hr />
+<h4 id="reciprocating"><strong>Reciprocating</strong></h4>
+<p><strong>Description:</strong>
+Describe what the item is.</p>
+<table>
+<thead>
+<tr>
+<th>Recommendations</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Header</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Paragraph</td>
+<td>Text</td>
+</tr>
+</tbody>
+</table>
+<p><code>Design Rules:</code></p>
+<ul>
+<li>Design Rule 1</li>
+<li>Design Rule 2</li>
+<li>Design Rule 3</li>
+</ul>
+<p><strong>Further reading:</strong></p>
+<hr />
+<h2 id="flanges-and-gaskets">Flanges and Gaskets</h2>
+<hr />
+<p><strong>Description:</strong>
+Describe what the item is.</p>
+<table>
+<thead>
+<tr>
+<th>Recommendations</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Header</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Paragraph</td>
+<td>Text</td>
+</tr>
+</tbody>
+</table>
+<p><code>Design Rules:</code></p>
+<ul>
+<li>The flange breaking procedure should follow a colour coded system (e.g., traffic light system) for tagging the flanges. Red (broken), yellow (torqued) and green (leak tested). Following this, the tag can be removed.</li>
+<li>In maintenance procedures involving opening-up the process, ensure that process linework is both depressurised and free of hydrocarbons before breaking any flanges.</li>
+<li>Design Rule 3</li>
+</ul>
+<p><strong>Further reading:</strong></p>
+<hr />
+<h2 id="hose-and-couplings">Hose and Couplings</h2>
+<hr />
+<h4 id="basic-average-and-multi-safety-system-facilities"><strong>Basic, Average and Multi Safety-System Facilities</strong></h4>
+<p><strong>Description:</strong>
+Describe what the item is.</p>
+<table>
+<thead>
+<tr>
+<th>Recommendations</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Header</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Paragraph</td>
+<td>Text</td>
+</tr>
+</tbody>
+</table>
+<p><code>Design Rules:</code></p>
+<ul>
+<li>Design Rule 1</li>
+<li>Design Rule 2</li>
+<li>Design Rule 3</li>
+</ul>
+<p><strong>Further reading:</strong></p>
+<hr />
+<h2 id="pipework">Pipework</h2>
+<hr />
+<p><strong>Description:</strong>
+Describe what the item is.</p>
+<table>
+<thead>
+<tr>
+<th>Recommendations</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Header</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Paragraph</td>
+<td>Text</td>
+</tr>
+</tbody>
+</table>
+<p><code>Design Rules:</code></p>
+<ul>
+<li>When defining the pipework inspection programme, areas of pipework that fall within the CUI (corrosion under insulation) temperature range need to be considered. The higher the temperature, the faster the rate of CUI; however, if the temperature is too high, the water will boil away and you will be left with a dry steam - so no CUI will occur. This is only relevant for carbon steel pipework.</li>
+<li>Consideration must be given to the implications and risks of CUI when specifying the paint specification for carbon steel pipework and the insulation specification, particularly around pipe supports and pipe hangers, which provide a possible entry point for rain into the insulation through the metal covering.</li>
+<li>By contrast, stainless steel suffers from MIC (microbial induced corrosion).</li>
+<li>Risk of chlorine induced corrosion of stainless steel if the temperature falls below the dew point of water within cooler parts of the process (due to chloride condensing out).</li>
+<li>Naphthenic acids (NAs) corrosion occurs in the 218-400 °C temperature range for most process pipework metallurgy. Refer to API 581 for more information.</li>
+<li>N.B. You're always allowed to overpressure pipework, provided it has been designed to ASME B31 (Code for Pressure Piping), and are allowed a certain number of hours at 110%, 120% and 133% above design pressure.</li>
+</ul>
+<p><strong>Further reading:</strong>
+1. ASME B31 (Code for Pressure Piping).
+2. API 581 (Risk-based Inspection Methodology).</p>
+<hr />
+<h2 id="pumps"><strong>Pumps</strong></h2>
+<hr />
+<h4 id="pump-casing"><strong>Pump Casing</strong></h4>
+<p><strong>Description:</strong>
+Describe what the item is.</p>
+<table>
+<thead>
+<tr>
+<th>Recommendations</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Header</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Paragraph</td>
+<td>Text</td>
+</tr>
+</tbody>
+</table>
+<p><code>Design Rules:</code></p>
+<ul>
+<li>Typically, pumps are not insulated due to the difficulty in moulding the insulation around the pump. However, exceptions exist, e.g., in hot oil service in the 350 °C temperature range, insulated with a concrete block.</li>
+<li>VSD setpoints controlled, e.g., by operator, (key) locked in DCS or fixed locally.</li>
+<li>Maximum stall head of pump (at max VSD speed) is unlikley to be 2x the operating head; hence, can be taken at 30%.</li>
+<li>Pump maintenance is considered as minor maintenance. Hence, no pre start-up checklist is required afterwards. However, a line check should be carried out, whereby all valves in the nearby linework are checked to ensure the valves are in their correct positions.</li>
+<li>You don't want suction strainers on a pump. Instead, put a filter on the discharge side of the pump if you want to have a filtered product (as the discharge has a higher pressure).</li>
+<li>Consider the need to provide positive isolation (using a blank or spectacle blind) to avoid single valve isolation.</li>
+<li>Consider how to safely collect liquids draining from the pump body vent to prevent spillage to grade, and the PPE requirements to safely vent pump body. For example, the use of a metal can/tin to help collect any liquids.</li>
+</ul>
+<p><strong>Further reading:</strong></p>
+<hr />
+<h2 id="tankers"><strong>Tankers</strong></h2>
+<hr />
+<h4 id="standard-tankers"><strong>Standard Tankers</strong></h4>
+<p><strong>Description:</strong>
+Describe what the item is.</p>
+<table>
+<thead>
+<tr>
+<th>Recommendations</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Header</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Paragraph</td>
+<td>Text</td>
+</tr>
+</tbody>
+</table>
+<p><code>Design Rules:</code></p>
+<ul>
+<li>FFS = fire suppression system. This is a typical safeguard for tanks against the risk of fire.</li>
+<li>Design Rule 2</li>
+<li>Design Rule 3</li>
+</ul>
+<p><strong>Further reading:</strong></p>
+<hr />
+<h4 id="road-tankers"><strong>Road Tankers</strong></h4>
+<p><strong>Description:</strong>
+Describe what the item is.</p>
+<table>
+<thead>
+<tr>
+<th>Recommendations</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Header</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Paragraph</td>
+<td>Text</td>
+</tr>
+</tbody>
+</table>
+<p><code>Design Rules:</code></p>
+<ul>
+<li>Install hydrocarbon gas or VOC (volatile organic compound) detection in the vicinity of the loading (exporting) station to detect any venting or spillage during the road tanker loading process.</li>
+<li>Design Rule 2</li>
+<li>Design Rule 3</li>
+</ul>
+<p><strong>Further reading:</strong></p>
+<hr />
+<h4 id="lpg-road-tankers"><strong>LPG Road Tankers</strong></h4>
+<p><strong>Description:</strong>
+Describe what the item is.</p>
+<table>
+<thead>
+<tr>
+<th>Recommendations</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Header</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Paragraph</td>
+<td>Text</td>
+</tr>
+</tbody>
+</table>
+<p><code>Design Rules:</code></p>
+<ul>
+<li>Design Rule 1</li>
+<li>Design Rule 2</li>
+<li>Design Rule 3</li>
+</ul>
+<p><strong>Further reading:</strong></p>
 <hr />
 <h2 id="valves"><strong>Valves</strong></h2>
 <hr />
@@ -584,325 +882,7 @@ Describe what the item is.</p>
 <li>Be aware of gum deposits as a sticky, gloopy mess that can stick NRV's open or closed. These are more prevalent in services at higher temperatures and where there is oxygen ingress. Occurs in diesel services but not MOLO.</li>
 </ul>
 <p><strong>Further reading:</strong></p>
-<hr />
-<h2 id="pumps"><strong>Pumps</strong></h2>
-<hr />
-<h4 id="pump-casing"><strong>Pump Casing</strong></h4>
-<p><strong>Description:</strong>
-Describe what the item is.</p>
-<table>
-<thead>
-<tr>
-<th>Recommendations</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Header</td>
-<td>Title</td>
-</tr>
-<tr>
-<td>Paragraph</td>
-<td>Text</td>
-</tr>
-</tbody>
-</table>
-<p><code>Design Rules:</code></p>
-<ul>
-<li>Typically, pumps are not insulated due to the difficulty in moulding the insulation around the pump. However, exceptions exist, e.g., in hot oil service in the 350 °C temperature range, insulated with a concrete block.</li>
-<li>VSD setpoints controlled, e.g., by operator, (key) locked in DCS or fixed locally.</li>
-<li>Maximum stall head of pump (at max VSD speed) is unlikley to be 2x the operating head; hence, can be taken at 30%.</li>
-<li>Pump maintenance is considered as minor maintenance. Hence, no pre start-up checklist is required afterwards. However, a line check should be carried out, whereby all valves in the nearby linework are checked to ensure the valves are in their correct positions.</li>
-<li>You don't want suction strainers on a pump. Instead, put a filter on the discharge side of the pump if you want to have a filtered product (as the discharge has a higher pressure).</li>
-<li>Consider the need to provide positive isolation (using a blank or spectacle blind) to avoid single valve isolation.</li>
-<li>Consider how to safely collect liquids draining from the pump body vent to prevent spillage to grade, and the PPE requirements to safely vent pump body. For example, the use of a metal can/tin to help collect any liquids.</li>
-</ul>
-<p><strong>Further reading:</strong></p>
-<hr />
-<h2 id="hose-and-couplings">Hose and Couplings</h2>
-<hr />
-<h4 id="basic-average-and-multi-safety-system-facilities"><strong>Basic, Average and Multi Safety-System Facilities</strong></h4>
-<p><strong>Description:</strong>
-Describe what the item is.</p>
-<table>
-<thead>
-<tr>
-<th>Recommendations</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Header</td>
-<td>Title</td>
-</tr>
-<tr>
-<td>Paragraph</td>
-<td>Text</td>
-</tr>
-</tbody>
-</table>
-<p><code>Design Rules:</code></p>
-<ul>
-<li>Design Rule 1</li>
-<li>Design Rule 2</li>
-<li>Design Rule 3</li>
-</ul>
-<p><strong>Further reading:</strong></p>
-<hr />
-<h2 id="hard-arms">Hard Arms</h2>
-<hr />
-<p><strong>Description:</strong>
-Describe what the item is.</p>
-<table>
-<thead>
-<tr>
-<th>Recommendations</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Header</td>
-<td>Title</td>
-</tr>
-<tr>
-<td>Paragraph</td>
-<td>Text</td>
-</tr>
-</tbody>
-</table>
-<p><code>Design Rules:</code></p>
-<ul>
-<li>Design Rule 1</li>
-<li>Design Rule 2</li>
-<li>Design Rule 3</li>
-</ul>
-<p><strong>Further reading:</strong></p>
-<hr />
-<h2 id="flanges-and-gaskets">Flanges and Gaskets</h2>
-<hr />
-<p><strong>Description:</strong>
-Describe what the item is.</p>
-<table>
-<thead>
-<tr>
-<th>Recommendations</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Header</td>
-<td>Title</td>
-</tr>
-<tr>
-<td>Paragraph</td>
-<td>Text</td>
-</tr>
-</tbody>
-</table>
-<p><code>Design Rules:</code></p>
-<ul>
-<li>The flange breaking procedure should follow a colour coded system (e.g., traffic light system) for tagging the flanges. Red (broken), yellow (torqued) and green (leak tested). Following this, the tag can be removed.</li>
-<li>In maintenance procedures involving opening-up the process, ensure that process linework is both depressurised and free of hydrocarbons before breaking any flanges.</li>
-<li>Design Rule 3</li>
-</ul>
-<p><strong>Further reading:</strong></p>
-<hr />
-<h2 id="pipework">Pipework</h2>
-<hr />
-<p><strong>Description:</strong>
-Describe what the item is.</p>
-<table>
-<thead>
-<tr>
-<th>Recommendations</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Header</td>
-<td>Title</td>
-</tr>
-<tr>
-<td>Paragraph</td>
-<td>Text</td>
-</tr>
-</tbody>
-</table>
-<p><code>Design Rules:</code></p>
-<ul>
-<li>When defining the pipework inspection programme, areas of pipework that fall within the CUI (corrosion under insulation) temperature range need to be considered. The higher the temperature, the faster the rate of CUI; however, if the temperature is too high, the water will boil away and you will be left with a dry steam - so no CUI will occur. This is only relevant for carbon steel pipework.</li>
-<li>Consideration must be given to the implications and risks of CUI when specifying the paint specification for carbon steel pipework and the insulation specification, particularly around pipe supports and pipe hangers, which provide a possible entry point for rain into the insulation through the metal covering.</li>
-<li>By contrast, stainless steel suffers from MIC (microbial induced corrosion).</li>
-<li>Risk of chlorine induced corrosion of stainless steel if the temperature falls below the dew point of water within cooler parts of the process (due to chloride condensing out).</li>
-<li>Naphthenic acids (NAs) corrosion occurs in the 218-400 °C temperature range for most process pipework metallurgy. Refer to API 581 for more information.</li>
-<li>N.B. You're always allowed to overpressure pipework, provided it has been designed to ASME B31 (Code for Pressure Piping), and are allowed a certain number of hours at 110%, 120% and 133% above design pressure.</li>
-</ul>
-<p><strong>Further reading:</strong>
-1. ASME B31 (Code for Pressure Piping).
-2. API 581 (Risk-based Inspection Methodology).</p>
-<hr />
-<h2 id="compressors">Compressors</h2>
-<hr />
-<h4 id="centrifugal"><strong>Centrifugal</strong></h4>
-<p><strong>Description:</strong>
-Describe what the item is.</p>
-<table>
-<thead>
-<tr>
-<th>Recommendations</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Header</td>
-<td>Title</td>
-</tr>
-<tr>
-<td>Paragraph</td>
-<td>Text</td>
-</tr>
-</tbody>
-</table>
-<p><code>Design Rules:</code></p>
-<ul>
-<li>It is common practice to install a knock-out vessel with level detection in the suction of any compressor for which there is a risk of liquid accumulation in the suction line. The requirement depends upon the probability of liquid accumulation and the tolerance of the compressor to liquid.</li>
-<li>Design Rule 2</li>
-<li>Design Rule 3</li>
-</ul>
-<p><strong>Further reading:</strong></p>
-<hr />
-<h4 id="reciprocating"><strong>Reciprocating</strong></h4>
-<p><strong>Description:</strong>
-Describe what the item is.</p>
-<table>
-<thead>
-<tr>
-<th>Recommendations</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Header</td>
-<td>Title</td>
-</tr>
-<tr>
-<td>Paragraph</td>
-<td>Text</td>
-</tr>
-</tbody>
-</table>
-<p><code>Design Rules:</code></p>
-<ul>
-<li>Design Rule 1</li>
-<li>Design Rule 2</li>
-<li>Design Rule 3</li>
-</ul>
-<p><strong>Further reading:</strong></p>
-<hr />
-<h2 id="tankers"><strong>Tankers</strong></h2>
-<hr />
-<h4 id="standard-tankers"><strong>Standard Tankers</strong></h4>
-<p><strong>Description:</strong>
-Describe what the item is.</p>
-<table>
-<thead>
-<tr>
-<th>Recommendations</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Header</td>
-<td>Title</td>
-</tr>
-<tr>
-<td>Paragraph</td>
-<td>Text</td>
-</tr>
-</tbody>
-</table>
-<p><code>Design Rules:</code></p>
-<ul>
-<li>FFS = fire suppression system. This is a typical safeguard for tanks against the risk of fire.</li>
-<li>Design Rule 2</li>
-<li>Design Rule 3</li>
-</ul>
-<p><strong>Further reading:</strong></p>
-<hr />
-<h4 id="road-tankers"><strong>Road Tankers</strong></h4>
-<p><strong>Description:</strong>
-Describe what the item is.</p>
-<table>
-<thead>
-<tr>
-<th>Recommendations</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Header</td>
-<td>Title</td>
-</tr>
-<tr>
-<td>Paragraph</td>
-<td>Text</td>
-</tr>
-</tbody>
-</table>
-<p><code>Design Rules:</code></p>
-<ul>
-<li>Install hydrocarbon gas or VOC (volatile organic compound) detection in the vicinity of the loading (exporting) station to detect any venting or spillage during the road tanker loading process.</li>
-<li>Design Rule 2</li>
-<li>Design Rule 3</li>
-</ul>
-<p><strong>Further reading:</strong></p>
-<hr />
-<h4 id="lpg-road-tankers"><strong>LPG Road Tankers</strong></h4>
-<p><strong>Description:</strong>
-Describe what the item is.</p>
-<table>
-<thead>
-<tr>
-<th>Recommendations</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Header</td>
-<td>Title</td>
-</tr>
-<tr>
-<td>Paragraph</td>
-<td>Text</td>
-</tr>
-</tbody>
-</table>
-<p><code>Design Rules:</code></p>
-<ul>
-<li>Design Rule 1</li>
-<li>Design Rule 2</li>
-<li>Design Rule 3</li>
-</ul>
-<p><strong>Further reading:</strong></p>
-<hr />
-<h2 id="project-layout">Project layout</h2>
-<ul>
-<li>Orifice plates:</li>
-<li>Orifice plates that are critical for a relief case can either be welded in place, or painted red and a tag attached which states that "this orifice plate is critical to a relief case". This ensures that they are never removed during normal operation.</li>
-<li>As an industry heuristic, <strong>never</strong> install a RO less than 3 mm in anything due to the risk of blockages. In high pressure systems, you can install two RO's in series. This has the advantage of less acoustic problems whilst still achieving the same pressure drop (however, both RO's will have to be larger).</li>
-<li>A RO in dirty service blocks/plugs every 20 years.</li>
-<li>Some RO's are particularly robust against plugging/blocking. E.g., for fouling service, it is an option to use a half-pipe orifice that allows free passage of solids along the bottom of the pipe and is therefore less prone to fouling compared to the conventional concentric orifice. However, this does come at a cost of reduced cross-sectional area of the pipe.</li>
-</ul></div>
+<hr /></div>
             </div>
         </div>
 
